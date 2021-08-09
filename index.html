@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Esami Etomoiri's Portfolio">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esami Etomoiri</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div id="header" class="wrapper">
+      <h1 class="site-title">Esami Etomoiri</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <!-- //#header.wrapper -->
+
+    <div id="mainvisual">
+      <img src="img/mainvisual-p.jpg" alt="">
+    </div>
+
+    <!-- 
+      about 
+    -->
+    <section id="about" class="wrapper">
+      <h2 class="section-title">About</h2>
+      
+      <div class="about-content">
+        <div class="about-content-img">
+          <img src="img/ProfolioImg.jpg" alt="">
+        </div><!-- //.about-content-img -->
+
+        
+        <div class="about-content-text">
+          <p>
+            目的を定めたサイト作りを最優先に。<br>
+            価値を生み、価値を与える。
+          </p>
+          <p>
+            そんなウェブサイトの作成をお手伝いします。 <br>
+            お気軽にご相談下さい。
+          </p>
+        </div><!-- //.about-content-text -->
+
+      </div><!-- //.about-content -->
+     </section><!-- //#about -->
+
+     <!-- 
+       Service 
+      -->
+     <section id="service" class="wrapper">
+      <h2 class="section-title">Servive</h2>
+
+      <div class="service-cards"><!-- make 3 of them-->
+
+        <div class="service-card">
+          <h3 class="service-title">Coding</h3>
+          <span class="material-icons">code</span>
+          <p class="service-card-text">
+            HTML CSS JavaScript WordPress PHP のプログラミング、コーディング。 
+            保守運用しやすいコーディングを心がけています。
+          </p>
+        </div><!-- //service-card -->
+
+        <div class="service-card">
+          <h3 class="service-title">WordPress</h3>
+          <span class="material-icons">wordpress</span>
+          <p class="service-card-text">
+            ホームページをWordPress化してサイト運営をより身近に、より容易に。
+          </p>
+        </div><!-- //service-card -->
+
+        <div class="service-card">
+          <h3 class="service-title">English Website</h3>
+          <span class="material-icons">translate</span>
+          <p class="service-card-text">
+            ホームページを英語バージョンに。<br>(※医療、製造機械などの専門分野の翻訳は除く)
+          </p>
+        </div><!-- //service-card -->
+      </div><!-- //service-cards * 3 of them -->
+     </section><!-- //Service -->
+
+     <!-- 
+       works
+      -->
+
+     <section id="works" class="wrapper">
+      <h2 class="section-title">Works</h2>
+      <div class="works-list">
+        <ul class="works-list-img">
+          <li><a href="#"><img src="img/work1.png" alt=""></a></li>
+          <li><a href="#"><img src="img/work2.png" alt=""></a></li>
+          <li><a href="#"><img src="img/work3.png" alt=""></a></li>
+          <li><a href="#"><img src="img/work4.png" alt=""></a></li>
+          <li><a href="#"><img src="img/work5.png" alt=""></a></li>
+          <li><a href="#"><img src="img/work6.png" alt=""></a></li>
+        </ul>
+      </div><!-- //works-list -->
+     </section><!-- //works -->
+
+     <!-- 
+       contact 
+      -->
+
+      <section id="contact" class="wrapper">
+        <h2 class="section-title">Contact</h2>
+          <div class="form">
+
+                  <!-- Do not change class, action, method. -->
+                  <form class="formrun" action="https://form.run/api/v1/r/dyexjad3dite52ohsasiz7yf" method="post">
+                  <!-- ↓You can add/change fields. -->
+                  <div class="form-content">
+                    <label>お名前</label>
+                    <input name="お名前" type="text">
+                  </div>
+
+                  <div class="form-content">
+                    <label>メールアドレス [必須]</label>
+                    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                  </div>
+
+                  <div class="form-content">
+                    <label>お問い合わせ [必須]</label>
+                    <textarea class="textarea-rows" name="お問い合わせ" data-formrun-required></textarea>
+                    <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+                  </div>
+
+                  
+
+                  <!-- ボット投稿をブロックするためのタグ -->
+                  <div class="_formrun_gotcha">
+                    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                  </div>
+
+                  <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">Send</button>
+                </form>
+
+              </div><!-- //.form -->
+      </section><!-- //contact -->
+    
+      <div id="footer">
+        <div class="footer-wrapper">
+        
+          <div class="footer-content">
+
+                <div class="footer-content-left"></div>
+                    <h3 class="footer-title">About</h3>
+
+                    <div class="footer-text">                   
+                      <p>
+                        Works で挙げたサイトは<br>
+                        Codestep (https://code-step.com/)さんの<br>
+                        学習サイトを摸写コーディングしたものです。
+                      </p>
+                    </div>
+
+                <ul>
+                  <li><a href="#" class="arrow">プロフィール詳細</a></li>
+                  <li><a href="#" class="arrow">お仕事の依頼</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-content-right">
+                  <h3 class="footer-title">Twitter</h3>
+                  <blockquote class="twitter-tweet" data-width="300" ><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/codestep?src=hash&amp;ref_src=twsrc%5Etfw">#codestep</a> さんの初級編の摸写をやってみました。難しいなぁ。インライン要素は文章の一部として扱われるから マージンやwidth, height も効かない。marginをつけたいならdisplay:blockにするのですよ。わかった？ 私。はい。<a href="https://twitter.com/hashtag/web%E5%88%B6%E4%BD%9C%E7%8B%AC%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#web制作独学</a><a href="https://twitter.com/hashtag/%E3%83%95%E3%83%AA%E3%83%BC%E3%83%A9%E3%83%B3%E3%82%B9%E3%81%A7%E7%A8%BC%E3%81%90%E4%BA%BA%E3%81%AB%E3%81%AA%E3%82%8B?src=hash&amp;ref_src=twsrc%5Etfw">#フリーランスで稼ぐ人になる</a> <a href="https://t.co/1Ar3Eh9VXm">pic.twitter.com/1Ar3Eh9VXm</a></p>&mdash; Rio M (@40sprogramming) <a href="https://twitter.com/40sprogramming/status/1424339778053447685?ref_src=twsrc%5Etfw">August 8, 2021</a></blockquote> 
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>        
+                </div><!-- //footer-content -->
+      </div><!-- //footer-wrapper -->
+
+              <div class="copyright">
+                <p>&copy; 2021 Esami Etomoiri</p>
+              </div>
+
+      </div>
+    </div>
+  </div><!-- /container -->
+</body>
+</html>
