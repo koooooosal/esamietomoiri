@@ -5,6 +5,7 @@ html {
 }
 body {
   font-family: 'Crimson Text', serif;
+  color: #333;
 }
 a {
   text-decoration: none;
@@ -24,6 +25,17 @@ img {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+.section-title::before {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  top: -150%;
+  left: 50%;
 }
 
 /* ========================
@@ -42,6 +54,7 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.5rem;
 }
 #header li {
   padding-left: 40px;
@@ -58,7 +71,7 @@ header
 mainvisual 
 ===========================*/
 #mainvisual {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 #mainvisual img {
   width: 100%;
@@ -69,6 +82,9 @@ mainvisual
 /* ========================
 about 
 ===========================*/
+#about {
+  margin-bottom: 150px;
+}
 #about .about-content {
   display: flex;
   align-items: center;
@@ -85,10 +101,14 @@ about
 #about .about-content-text p:first-of-type {
   margin-bottom: 20px;
 }
+
+
 /* ========================
 service 
 ===========================*/
-
+#service {
+  margin-bottom: 150px;
+}
 
 #service .service-cards {
   display: flex;
@@ -115,7 +135,9 @@ service
 /* ========================
 works 
 ===========================*/
-
+#works {
+  margin-bottom: 150px;
+}
 
 #works .works-list {
   display: flex;
@@ -203,6 +225,7 @@ footer
 }
 #footer .footer-text {
   padding-top: 5px;
+  font-size: 1.125rem;
 }
 #footer ul {
   /* margin-bottom: 5px; */
@@ -234,5 +257,5 @@ footer
 
 .copyright {
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
