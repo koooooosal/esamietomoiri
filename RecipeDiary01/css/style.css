@@ -96,3 +96,36 @@ footer
 #footer .sns li {
   margin: 0 10px;
 }
+
+/* ================
+sp
+===================*/
+
+@media screen and (max-width: 768px) {
+
+  #mainvisual {
+    height: 60vh;
+  }
+
+  .txt-on-main p {
+    font-size: 2rem;
+  }
+
+  /* text */
+
+  .text p.text {
+    text-align: left;
+  }
+  .text p .spbr {
+    display: none;
+  }
+
+  /* images */
+
+  .images {
+    flex-direction: column;
+  }
+  .images li {
+    width: 100%;
+  }
+}
