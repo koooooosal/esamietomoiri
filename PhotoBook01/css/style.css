@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 0.875rem;
+  background-color: #F4F9FF;
+}
+img {
+  max-width: 100%;
+}
+
+/* サイト全体の幅をコンテナーで指定 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* コンテンツはインナーコンテンツで指定 */
+.inner-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.section-title-h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ================
+header
+=================== */
+#header {
+  margin-top: 60px;
+}
+
+#header .site-title-logo {
+  width: 160px;
+  line-height: 1px;
+  margin-bottom: 15px;
+}
+
+#header .site-title-logo a {
+  display: block;
+}
+
+/* ====================
+mainvisual
+======================= */
+#mainvisual {
+  margin-bottom: 60px;
+}
+#mainvisual img {
+  display: block;
+  object-fit: cover;
+  width: 1000px;
+  height: 50vh;
+
+}
+
+/* ================
+index
+=================== */
+
+#index {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 60px;
+}
+
+#index .index-list {
+  margin-left: 20px;
+}
+
+#index .index-list li{
+  margin-bottom: 20px;
+}
+
+#index .index-list li:last-child{
+  margin-bottom: 0px;
+}
+
+/* ================
+詳細
+=================== */
+#detail {
+  margin-bottom: 100px;
+}
+#detail .detail-content {
+  display: flex;
+  align-items: flex-start;
+}
+#detail .detail-content .detail-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#detail .detail-content .img {
+  width: 45%;
+  height: 270px;
+  margin-right: 60px;
+}
+#detail .detail-content .detail-content-text .detail-tile {
+  margin-bottom: 20px;
+}
+#detail .detail-content dl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: solid 1px#dedede;
+  border-bottom: solid 1px #dedede;
+}
+#detail .detail-content dt {
+  width: 25%;
+}
+#detail .detail-content dd {
+  width: 75%;
+}
+#detail p {
+  padding: 20px 0;
+}
+#detail .detail-content .link-online-btn {
+  color: #333;
+}
+#detail .detail-content .link-online-btn:hover {
+  opacity: .8;
+}
+
+/* ================
+フッター
+=================== */
+#footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ================
+sp
+=================== */
+@media screen and (max-width: 767px) {
+ .inner-content {
+   padding: 0 40px;
+ }
+
+ /* header */
+ #header {
+   padding: 0 10px;
+ }
+
+/* detail */
+#detail {
+  margin-bottom: 50px;
+}
+#detail .detail-content {
+  flex-direction: column;
+}
+#detail .detail-content .img {
+  width: 100%;
+}
+#detail .detail-content .link-online-btn {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+#detail .detail-content .link-online-btn:hover {
+  opacity: .8;
+}
+}
+
+
