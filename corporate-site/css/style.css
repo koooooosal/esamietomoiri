@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #f0f0f0;
+  color: #000;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+
+.site-title {
+  font-weight: normal;
+  height: 3rem;
+  margin-right: 8rem;
+}
+.site-title a {
+  display: block;
+}
+.section-title {
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 3.125rem;
+}
+.section-title::after {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background-color: #000;
+  display: block;
+}
+.section-title .en {
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.3em;
+  margin-bottom: .625rem;
+}
+.section-title .ja {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 2.25rem;
+}
+
+/* 横幅は1032px */
+.wrapper {
+  width: 100%;
+  max-width: 64.5rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+/*========================
+ヘッダー
+==========================*/
+#headr {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#header .inner {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner ul {
+  display: flex;
+  align-items: center;
+}
+#header .inner li {
+  margin-right: 1.875rem;
+}
+
+#header .contact {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #3d3c3c;
+  color: #fff;
+  font-size: 0.75rem;
+  display: inline-block;
+  text-align: center;
+}
+#header .contact:hover {
+  background-color: #000;
+}
+/*========================
+メインビジュアル
+==========================*/
+#mainvisual {
+  margin-bottom: 7.5rem;
+}
+#mainvisual img {
+  width: 100%;
+  height: calc(100vh - 5rem);
+  object-fit: cover;
+}
+
+/*========================
+ニュース
+==========================*/
+#news {
+  margin-bottom: 7.5rem;
+}
+#news .news-list {
+  display: flex;
+  justify-content: space-between;
+}
+#news .news-list li {
+  width: calc(100%/3);
+  border-right: solid 1px #000;
+  padding: .625rem 1.25rem;
+}
+#news .news-list li:first-child {
+  padding-left: 0;
+}
+#news .news-list li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+#news .news-list li .date {
+  margin-bottom: 1rem;
+}
+#news .news-list li .date span {
+  width: 3.125rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-left: 0.625rem;
+  text-align: center;
+}
+/*========================
+私たちについて
+==========================*/
+#about {
+  display: flex;
+  margin-bottom: 7.5rem;
+}
+#about .img {
+  width: 55%;
+}
+#about .img img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+#about .about-content {
+  width: 45%;
+  padding: 11.25rem 5% 0 5%;
+}
+#about .about-content p {
+  line-height: 2.2;
+}
+/*========================
+事業内容
+==========================*/
+#business {
+  margin-bottom: 7.5rem;
+}
+#business .flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+#business .flex .left {
+  width: 46%;
+  margin-top: 6.25rem;
+}
+#business .flex .right {
+  width: 46%;
+}
+#business .flex .item {
+  margin-bottom: 3.125rem;
+}
+#business .flex .item:last-child {
+  margin-bottom: 0;
+}
+#business .flex .card-title {
+  font-weight: bold;
+  margin: 0 0 .625rem 1.125rem;
+  position: relative;
+}
+#business .flex .card-title::before {
+  content: "";
+  width: .5rem;
+  height: .0625rem;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -1.125rem;
+}
+/*========================
+会社情報
+==========================*/
+#company {
+  height: 46.875rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#company .text {
+  width: 55%;
+  background-color: #fff;
+  padding: 6.25rem 8% 6.25rem 6%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#company .img {
+  width: 53%;
+  position: absolute;
+  top: 7.1875rem;
+  right: 0;
+}
+#company .img img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+#company .company-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* ================= dt ================ */
+#company .company-info dt {
+  width: 30%;
+  margin-top: .625rem;
+}
+#company .company-info dt:first-of-type {
+  margin-top: 0;
+}
+/* ================= dd ================ */
+#company .company-info dd {
+  width: 70%;
+  margin-top: 0.625rem;
+}
+#company .company-info dd:first-of-type {
+  margin-top: 0;
+}
+
+#company .company-info .add {
+  margin-left: 30%;
+}
+
+
+/*========================
+フッター
+==========================*/
+#footer {
+  background-color: #fff;
+  padding-bottom: 1.25rem;
+}
+#footer .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+#footer .flex .logo {
+  margin-right: 0;
+}
+#footer .copyright {
+  font-size: 0.625rem;
+}
+
+/*========================
+sp
+==========================*/
+@media screen and (max-width: 900px) {
+  .site-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .section-title {
+    margin-bottom: 2.125rem;
+  }
+  .section-title .ja {
+    margin-bottom: 1rem;
+  }
+
+  /* ヘッダー */
+  #header h1 {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  #header .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  #header .contact {
+    display: none;
+  }
+  #mainvisual {
+    margin-bottom: 5rem;
+  }
+
+  #news {
+    margin-bottom: 5rem;
+  }
+  #news .news-list {
+    flex-direction: column;
+  }
+  #news .news-list li {
+    width: 100%;
+    border-right: none;
+    padding: .625rem 0;
+    margin-bottom: 0;
+  }
+  #news .news-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  #about {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  #about .img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #about .img img {
+    height: 18.75rem;
+  }
+  #about .about-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #business {
+    margin-bottom: 5rem;
+  }
+  #business .flex {
+    flex-direction: column;
+    padding: 0;
+  }
+  #business .flex .left {
+    width: 100%;
+    margin: 0 0 1.875rem 0;
+  }
+  #business .flex .right {
+    width: 100%;
+  }
+  #business .flex .item {
+    text-align: center;
+    margin-bottom: 1.875rem;
+  }
+  #business .flex .card-title {
+    text-align: left;
+  }
+/* company ======================= */
+  #company { 
+    height: 480px;
+  }
+  #company .img {
+    display: none;
+  }
+  #company .text {
+    width: 100%;
+    padding: 1.25rem;
+  }
+ 
+  #company .company-info {
+    width: 100%;
+  }
+  #company .company-info .add {
+    margin-left: 30%;
+  }
+  
+
+  #footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #footer .flex .logo {
+    margin-bottom: .625rem;
+  }
+}
